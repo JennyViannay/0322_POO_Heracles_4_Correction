@@ -63,7 +63,7 @@ class Arena
         // récupérer le monstre à combattre
         $monster = $this->getMonsters()[$id];
 
-        // vérifier que le monde est atteignable
+        // vérifier que le monstre est atteignable
         if ($this->touchable($this->getHero(), $monster)) {
             // si oui on lance la bataille
             $this->getHero()->fight($monster);
